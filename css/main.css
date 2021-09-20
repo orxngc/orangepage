@@ -1,0 +1,32 @@
+/* CSS style sheet for index.html */
+@font-face {
+   font-family:Ubuntu;
+   src: url(/fonts/Ubuntu/Ubuntu-Regular.ttf);}
+body{ background-color: #ffffff;
+          color: #000000;
+          font-size: 140%;
+          margin: 2%;
+          font-family: Ubuntu;}
+nav {text-align: center;}
+h1 {color:#cc0000;
+      text-align: center; }
+
+h2 {color: #cc0000;}
+section{display: inline-block;
+             width: 30%;
+             float: left;
+             margin-right: 2%;}
+footer {clear: both;}
+nav    a { display: inline-block;
+   font-weight: bold;
+   color: #ffffff;
+   background-color: #cc0000;
+   width: 15%;
+   text-align: center;
+   padding: 4px;
+   text-decoration: none;}
+nav a:hover{background: #000000;
+      color: #cc0000;}
+nav a:focus{background: #000000;
+       color: #cc0000;}
+nav a:active{ border: 3px solid #000000;}
