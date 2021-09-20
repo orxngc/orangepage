@@ -1,0 +1,24 @@
+/* CSS style sheet for index.html */
+@font-face {
+   font-family:Ubuntu;
+   src: url(/fonts/Ubuntu/Ubuntu-Regular.ttf);}
+body{ background-color: #edf3f5;
+          color: #000000;
+          font-size: 140%;
+          margin: 2%;
+          font-family: Ubuntu;}
+
+h1 {color:#d12b2b;
+      text-align: center; }
+
+h2 {color: #c20000;}
+section{display: inline-block;
+             width: 30%;
+             float: left;
+             margin-right: 2%;}
+footer {clear: both;}
+a {text-decoration:none;}
+a:link {}
+a:visited{}
+a:hover {}
+a:active {}
