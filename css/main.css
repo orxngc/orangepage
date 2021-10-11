@@ -1,32 +1,79 @@
-/* CSS style sheet for index.html */
+/* CSS style sheet for index.html. This was created by Sufyan Ahmed in Microsoft Visual Studio Code.*/
 @font-face {
    font-family:Ubuntu;
    src: url(/fonts/Ubuntu/Ubuntu-Regular.ttf);}
-body{ background-color: #ffffff;
+* {font-family: Ubuntu, Verdana, Helvetica, Arial, sans-serif;
+}  
+body{
+       background-color: #ffffff;
           color: #000000;
           font-size: 140%;
-          margin: 2%;
-          font-family: Ubuntu;}
-nav {text-align: center;}
-h1 {color:#cc0000;
-      text-align: center; }
-
-h2 {color: #cc0000;}
-section{display: inline-block;
-             width: 30%;
-             float: left;
-             margin-right: 2%;}
-footer {clear: both;}
-nav    a { display: inline-block;
-   font-weight: bold;
-   color: #ffffff;
-   background-color: #cc0000;
-   width: 15%;
-   text-align: center;
-   padding: 4px;
-   text-decoration: none;}
-nav a:hover{background: #000000;
-      color: #cc0000;}
-nav a:focus{background: #000000;
-       color: #cc0000;}
-nav a:active{ border: 3px solid #000000;}
+          font-family: Ubuntu;
+          font-size: 2.39880059970015vh;
+       }
+nav, nav>button {
+       text-align: center;
+}
+h1 {
+       color:#cc0000;
+      text-align: center;
+       font-size: 4.7976011994003vh; 
+}      
+header>h1 {
+       font-size: 5.997001499250374vh;
+}
+h2 {
+       color: #cc0000;
+       font-size: 3.598200899550225vh;
+}
+section>h2 {
+       text-align: center;
+}
+@media screen and (min-width:750px){
+article{
+       width: 28%;
+       float: left;
+       margin: 1%;
+       border: #cc0000 solid;
+       padding: 1.4992503748125936vh;
+}
+}
+article{
+       width: 28%;
+       display: block;
+       margin: 1%;
+       border: #cc0000 solid;
+       padding: 1.4992503748125936vh;
+}
+article h2 {
+       text-align: center;
+}
+footer {
+       clear: both;
+       text-align: center;
+       border: #cc0000 solid;
+}
+nav a, nav button {
+       display: inline-block;
+       font-weight: bold;
+       color: #ffffff;
+       background-color: #cc0000;
+       width: 15%;
+       text-align: center;
+       padding: 0.5997001499250375vh;
+       text-decoration: none;
+}
+nav a:hover, nav button:hover{
+       background: #000000;
+            color: #cc0000;
+       }
+nav a:focus, nav button:focus{
+       background: #000000;
+            color: #cc0000;
+       }
+nav a:active, nav button:active{
+       border: 0.4497751124437781vh solid #000000;
+}
+h1:hover, h2:hover {
+       color: #000000;
+}
