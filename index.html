@@ -2,64 +2,152 @@
 <html lang = "en">
 <!-- head section -->
 <head>
+<!-- meta tags -->
 <meta charset = "UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-<!-- Link to Font Awesome kit for icons -->
-<script src="https://kit.fontawesome.com/d18c7751b3.js" crossorigin="anonymous"></script>
 <!-- title -->
 <title>Sufyan Ahmed</title>
+
+<!-- stylesheet links -->
+
+<!-- link to css reset stylesheet -->
+<link rel="stylesheet" href="css/reset.css">
+
+<!-- UIkit CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.7.6/dist/css/uikit.min.css">
+
+<!-- UIkit JS -->
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.7.6/dist/js/uikit.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.7.6/dist/js/uikit-icons.min.js"></script>
 
 <!-- link to stylesheet -->
 <link rel="stylesheet" href="css/main.css">
 
-<!-- Background colors(dark mode and light mode) -->
-<script src="js/bgColor.js"></script>
+<!-- other links -->
+<!-- link to Font Awesome Icons -->
+<script src="https://kit.fontawesome.com/d18c7751b3.js" crossorigin="anonymous"></script>
 
-<!-- Heading -->
-<header> <h1>Sufyan Ahmed</h1></header>
+<!-- link to orange favicon -->
+<link rel="shortcut icon" href="imgs/orangeFavicon.ico" type="image/x-icon">
 
 <!-- navigation menu -->
-<nav>
-    <a href="#" >Button</a>
-    <button onclick="darkMode()">
-        Dark Mode
-    </button>
-    <button onclick="lightMode()">
-        Light Mode
-    </button>
-    <a href="https://www.github.com/sahmed011" aria-label="My Github Profile"><i class="fab fa-github-square fa-lg"></i></a>
-    </nav>
+<!-- <nav class="uk-navbar-container uk-margin" uk-navbar>
+    <div class="uk-navbar-center">
+        <div class="uk-navbar-item">
+            <div><a href="mailto:fake@fake.com">Contact Me</a></div>
+        </div>
+    </div>
+</nav> -->
+
 </head>
+
+<!-- body -->
 <body>
+<div id="container">
 
-<section>
-<!-- Section 1: dummy text -->
-<article>
-    <h2>Dummy text</h2>
-    <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae auctor eu augue ut. Dolor sit amet consectetur adipiscing elit ut aliquam purus sit. Ullamcorper sit amet risus nullam eget felis. Nulla porttitor massa id neque aliquam vestibulum. Ante metus dictum at tempor commodo ullamcorper a lacus vestibulum. Sed enim ut sem viverra aliquet eget sit. Diam maecenas ultricies mi eget mauris pharetra et ultrices neque. Quis ipsum suspendisse ultrices gravida dictum fusce ut. Vivamus arcu felis bibendum ut tristique et egestas quis. Dignissim sodales ut eu sem integer vitae justo. Cursus metus aliquam eleifend mi in nulla.
-    </p>
-</article>
-
-<!-- Section 2: dummy text -->
-<article>
-    <h2>Dummy text</h2>
-    <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae auctor eu augue ut. Dolor sit amet consectetur adipiscing elit ut aliquam purus sit. Ullamcorper sit amet risus nullam eget felis. Nulla porttitor massa id neque aliquam vestibulum. Ante metus dictum at tempor commodo ullamcorper a lacus vestibulum. Sed enim ut sem viverra aliquet eget sit. Diam maecenas ultricies mi eget mauris pharetra et ultrices neque. Quis ipsum suspendisse ultrices gravida dictum fusce ut. Vivamus arcu felis bibendum ut tristique et egestas quis. Dignissim sodales ut eu sem integer vitae justo. Cursus metus aliquam eleifend mi in nulla.
-    </p>
-</article>
-
-<!-- Section 3: dummy text -->
-<article>
-    <h2>Dummy text</h2>
-    <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae auctor eu augue ut. Dolor sit amet consectetur adipiscing elit ut aliquam purus sit. Ullamcorper sit amet risus nullam eget felis. Nulla porttitor massa id neque aliquam vestibulum. Ante metus dictum at tempor commodo ullamcorper a lacus vestibulum. Sed enim ut sem viverra aliquet eget sit. Diam maecenas ultricies mi eget mauris pharetra et ultrices neque. Quis ipsum suspendisse ultrices gravida dictum fusce ut. Vivamus arcu felis bibendum ut tristique et egestas quis. Dignissim sodales ut eu sem integer vitae justo. Cursus metus aliquam eleifend mi in nulla.
-    </p>
-</article>
+<!-- first section - landing -->
+<section id="landing"> 
+    <div class="uk-cover-container uk-height-medium">
+        <video src="https://www.youtube.com/embed/J3pF2jkQ4vc" autoplay loop muted playsinline uk-cover></video>
+    </div>
+<!-- Heading -->
+<header><h1 class="uk-heading-medium">Sufyan Ahmed</h1></header>
+<p>Hello. Welcome to my portfolio.</p>
+<a href="#section2" class="uk-button uk-button-primary uk-button-large uk-align-center">See More <span uk-icon="chevron-down"></span></a>
 </section>
-<!-- Footer -->
-<footer><p>This page was created by Sufyan Ahmed.<p><footer>
 
+<!-- end of landing section -->
+
+<!-- second section - lighbox -->
+<section id="section2">
+    <h2>My Accomplishments and Projects</h2> <br> <p>(Since I don't have any, I provided some random pictures - they are good wallpapers)</p>
+    <div class="uk-child-width-1-3@m" uk-grid uk-lightbox="animation: fade">
+        <div>
+            <a class="uk-inline" href="imgs/Abstract Images/cells-of-abstract-4k-wb-1366x768.jpg">
+                <img src="imgs/Abstract Images/cells-of-abstract-4k-wb-1366x768.jpg" alt="">
+            </a>
+        </div>
+        <div>
+            <a class="uk-inline" href="imgs/Abstract Images/abstract-cube-building-5k-3u-1366x768.jpg">
+                <img src="imgs/Abstract Images/abstract-cube-building-5k-3u-1366x768.jpg" alt="">
+            </a>
+        </div>
+        <div>
+            <a class="uk-inline" href="imgs/Abstract Images/justin-maller-facets-gradient-s1-1366x768.jpg">
+                <img src="imgs/Abstract Images/justin-maller-facets-gradient-s1-1366x768.jpg" alt="">
+            </a>
+        </div>
+        <div>
+            <a class="uk-inline" href="imgs/Abstract Images/futuristic-dark-hexagon-10k-oo-1366x768.jpg">
+                <img src="imgs/Abstract Images/futuristic-dark-hexagon-10k-oo-1366x768.jpg" alt="">
+            </a>
+        </div>
+        <div>
+            <a class="uk-inline" href="imgs/Abstract Images/different-shapes-abstract-5k-vp-1366x768.jpg">
+                <img src="imgs/Abstract Images/different-shapes-abstract-5k-vp-1366x768.jpg" alt="">
+            </a>
+        </div>
+        <div>
+            <a class="uk-inline" href="imgs/Abstract Images/broken-red-5k-j0-1366x768.jpg">
+                <img src="imgs/Abstract Images/broken-red-5k-j0-1366x768.jpg" alt="">
+            </a>
+        </div>
+    </div>
+</section>
+<!-- third section - cards -->
+<section>
+<!-- cards -->
+<div class="uk-child-width-1-2@s uk-grid-match" uk-grid>
+    <div>
+        <div class="uk-card uk-card-hover uk-card-body">
+            <h3 class="uk-card-title">Why You should Hire Me</h3>
+            <p>I can't think of a reason yet so here is some filler content. Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </div>
+    </div>
+    <div>
+        <div class="uk-card uk-card-default uk-card-hover uk-card-body">
+            <h3 class="uk-card-title">How To Find A Countdown To DOOM</h3>
+            <p>go to <a href="pages/timer.html">Countdown to dooom</a> Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </div>
+    </div>
+    <div>
+        <div class="uk-card uk-card-hover uk-card-body">
+            <h3 class="uk-card-title">Filler Content</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </div>
+    </div>
+    <div>
+        <div class="uk-card uk-card-hover uk-card-body">
+            <h3 class="uk-card-title">Filler Content</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </div>
+    </div>
+</div>
+</section>
+<!-- beyond this is footer content -->
+</div>
+
+<!-- Footer -->
+<footer id="stickyFooter"><a href="" uk-totop></a><p>&copy; Sufyan Ahmed.</p>
+
+    <!-- privacy policy code -->
+    <a class="uk-button uk-button-default" href="#modal-center" uk-toggle>Privacy Policy <span uk-icon="warning"></span></a>
+    </a>
+
+    <div id="modal-center" class="uk-flex-top" uk-modal>
+        <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
+    
+            <button class="uk-modal-close-default" type="button" uk-close></button>
+    
+            <p>Some stuff only lawyers care about...</p>
+    
+        </div>
+    </div>
+
+<!-- link to Jquery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 </footer>
 </body>
 </html>
