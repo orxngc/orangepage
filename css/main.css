@@ -20,7 +20,7 @@
 /*Print View*/
 @media print {
    @import url(skeleton.css);
-   video, img, #section2, footer a, footer button {
+   video, img, #lightbox, footer a, footer button {
       display: none !important;
    }
    section:last-child {
@@ -31,10 +31,7 @@
 h1, footer, h2 {
    text-align: center;
 }
-#landing p {
-   text-align: center;
-}
-#section2 p {
+#landing p, #lightbox p {
    text-align: center;
 }
 #landing > a {
@@ -49,4 +46,7 @@ section {
 }
 *::selection {
    background-color: #ee0000 !important;
+}
+#cards a {
+   color: rgb(0, 140, 255) !important;
 }
