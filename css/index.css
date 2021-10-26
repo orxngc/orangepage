@@ -1,0 +1,72 @@
+/* font face ubuntu */
+@font-face {
+   font-family: Ubuntu;
+   src: url(/fonts/Ubuntu/Ubuntu-Regular.ttf);
+}
+
+/* footer code */
+#container {
+   min-height: 100vh;
+   margin-bottom: -1rem;
+}
+
+#stickyFooter {
+   height: 1rem;
+   line-height: 1rem;
+}
+
+#container::after {
+   content: "";
+   display: block;
+   height: 1rem;
+}
+
+/*Print View*/
+@media print {
+
+   video,
+   img,
+   #lightbox,
+   footer a,
+   footer button {
+      display: none !important;
+   }
+
+   section:last-child {
+      margin-bottom: auto;
+   }
+}
+
+/* rest of the code */
+h1,
+footer,
+h2 {
+   text-align: center;
+}
+
+#landing p,
+#lightbox p {
+   text-align: center;
+}
+
+#landing>a {
+   min-width: 20%;
+   max-width: 50%;
+}
+
+section {
+   margin-bottom: 37.481259370314801vh;
+}
+
+.uk-primary,
+.uk-button-primary {
+   background-color: #ee0000 !important;
+}
+
+*::selection {
+   background-color: #ee0000 !important;
+}
+
+#section3 a {
+   color: rgb(0, 140, 255) !important;
+}
