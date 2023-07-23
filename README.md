@@ -1,2 +1,2 @@
 # sahmed011.github.io
-This is my Github Pages site
+Personal site containing my code of ethics, socials links and about me.
