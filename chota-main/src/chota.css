@@ -1,12 +1,12 @@
-@import "_base.css";
-@import "_grid.css";
-@import "_form.css";
-@import "_nav.css";
-@import "_card.css";
-@import "_tab.css";
-@import "_tag.css";
-@import "_dropdown.css";
-@import "_util.css";
+@import url("base.css");
+@import url("grid.css");
+@import url("form.css");
+@import url("nav.css");
+@import url("card.css");
+@import url("tab.css");
+@import url("tag.css");
+@import url("dropdown.css");
+@import url("util.css");
 
 h1,
 h2,
