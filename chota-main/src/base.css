@@ -1,3 +1,11 @@
+@font-face {
+  font-family: "iAWriterMono";
+  src: url(https://cdn.jsdelivr.net/gh/iaolo/iA-Fonts@master/iA%20Writer%20Mono/Webfonts/iAWriterMonoS-Regular.woff);
+}
+@font-face {
+  font-family: "JetbrainsMono";
+  src: url(https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono@master/fonts/webfonts/JetBrainsMono-Regular.woff2);
+}
 :root {
   --bg-color: #fff;
   --bg-secondary-color: #f3f3f6;
@@ -11,10 +19,10 @@
   --grid-gutter: 2rem;
   --font-size: 1.6rem;
   --font-color: #333;
-  --font-family-sans: -apple-system, "BlinkMacSystemFont", "Avenir",
+  --font-family-sans: "iAWriterMono", -apple-system, "BlinkMacSystemFont", "Avenir",
     "Avenir Next", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
     "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-  --font-family-mono: monaco, "Consolas", "Lucida Console", monospace;
+  --font-family-mono: "iAWriterMono", monaco, "Consolas", "Lucida Console", monospace;
 }
 
 html {
