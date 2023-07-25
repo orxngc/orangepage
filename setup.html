@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="chota-main/src/chota.css">
+    <link rel="shortcut icon" type="image/jpg" href="clock.ico" />
+    <style>
+        body.dark {
+            --bg-color: #000;
+            --bg-secondary-color: #131316;
+            --font-color: #f5f5f5;
+            --color-grey: #ccc;
+            --color-darkGrey: #777;
+        }
+    </style>
+    <script>
+        if (window.matchMedia &&
+            window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            document.body.classList.add('dark');
+        }
+    </script>
+    <title>about orange</title>
+</head>
+<nav class="tabs is-full">
+    <a href="index.html">About Me</a>
+    <a href="ethics.html">Code of Ethics</a>
+    <a href="links.html">Links</a>
+    <details class=dropdown>
+        <summary>Info</summary>
+        <div class=card>
+            <p><a href="projects.html">Projects</a></p>
+            <p><a href="setup.html">My Setup</a></p>
+        </div>
+    </details>
+</nav>
+
+<body>
+    <h1 id="my-setup">My Setup</h1>
+    <ul>
+        <li><a href="https://www.logitech.com/en-ca/products/headsets/h390-usb-headset.981-000014.html">H390 USB
+                Computer Headset</a></li>
+        <li><a
+                href="https://www.redragonzone.com/products/redragon-m686-vampire-elite-wireless-gaming-mouse-16000-dpi-wired-wireless-gamer-mouse-with-professional-sensor">Redragon
+                M686</a></li>
+        <li><a
+                href="https://www.dell.com/en-hk/shop/laptops-and-ultrabooks/inspiron-15-3583/spd/inspiron-15-3583-laptop">Dell
+                Inspiron Laptop</a>
+            <ol>
+                <li>15.6-inch FHD (1920 x 1080) Truelife LED-Backlit On-Cell Touch Display</li>
+                <li>8th Generation Intel® Core™ CPU Intel(R) Core(TM) i3-8130U CPU @ 2.20GHz</li>
+                <li>RAM 12GB, 8Gx1 + 4Gx1, DDR4, 2400MHz</li>
+                <li>Black Chassis</li>
+                <li>Windows® 10</li>
+                <li>Intel® UHD Graphics 620 with shared graphics memory</li>
+                <li>128GB/256GB m.2 PCIe Solid State Drive (not sure about this to be honest)</li>
+                <li>Intel(R) Dual Band Wireless-AC 3165</li>
+            </ol>
+        </li>
+        <li><a href="https://www.westerndigital.com/products/usb-flash-drives/sandisk-ultra-usb-3-0#SDCZ48-128G-U46">My
+                Vault</a></li>
+    </ul>
+</body>
+
+</html>
