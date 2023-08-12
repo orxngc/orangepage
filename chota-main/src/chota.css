@@ -21,3 +21,6 @@ body {
 *::selection {
     background-color: #ffd000;
 }
+code {
+    color: #000000;
+}
