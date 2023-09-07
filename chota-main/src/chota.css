@@ -8,6 +8,25 @@
 @import url("dropdown.css");
 @import url("util.css");
 
+:root {
+    --bg-color: #111111;
+    --bg-secondary-color: #37373a;
+    --color-primary: #ffaa00;
+    --color-lightGrey: #5e5e5e;
+    --color-grey: #3a3a3b;
+    --color-darkGrey: #252525;
+    --color-error: #bb1818;
+    --color-success: #1dd105;
+    --grid-maxWidth: 120rem;
+    --grid-gutter: 2rem;
+    --font-size: 1.75rem;
+    --font-color: #ffffff;
+    --font-family-sans: "JetbrainsMono", -apple-sys tem, "BlinkMacSystemFont", "Avenir",
+        "Avenir Next", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
+        "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    --font-family-mono: "JetbrainsMono", monaco, "Consolas", "Lucida Console", monospace;
+}
+
 h1,
 h2,
 h3 {
@@ -17,10 +36,50 @@ h3 {
 body {
     margin-left: 5vh;
     margin-right: 5vh;
+    outline: 1px solid #ffaa00;
+    padding-left: 2vh;
 }
+
 *::selection {
-    background-color: #ffd000;
+    background-color: #ffaa00;
 }
+
 code {
     color: #000000;
+}
+
+#username {
+    font-family: 'JetbrainsMono';
+    font-size: clamp(3rem, 10vw, 10rem);
+    color: #ffaa00;
+    padding: 0rem clamp(1rem, 2vw, 3rem);
+    border-radius: clamp(0.4rem, 0.75vw, 1rem);
+}
+
+code {
+    color: #fff;
+}
+
+#orange {
+    color: #ffaa00;
+}
+
+/* Setting up cool link underlines */
+a {
+    text-decoration: none;
+    position: relative;
+}
+
+a:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    border-bottom: 2px solid #ff9900;
+    transition: 0.4s;
+}
+
+a:hover:after {
+    width: 100%;
 }

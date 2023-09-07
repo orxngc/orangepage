@@ -1,40 +1,102 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>
+        orange
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="chota-main/src/chota.css">
-    <link rel="shortcut icon" type="image/jpg" href="clock.ico" />
-    <style>
-        body.dark {
-            --bg-color: #000;
-            --bg-secondary-color: #131316;
-            --font-color: #f5f5f5;
-            --color-grey: #ccc;
-            --color-darkGrey: #777;
-        }
-    </style>
-    <script>
-        if (window.matchMedia &&
-            window.matchMedia('(prefers-color-scheme: dark)').matches) {
-            document.body.classList.add('dark');
-        }
-    </script>
-    <title>about orange</title>
+    <script src="https://kit.fontawesome.com/c67ad27611.js" crossorigin="anonymous"></script>
 </head>
-<nav class="tabs is-full">
-    <a href="index.html" class="active">About Me</a>
-    <a href="ethics.html">Code of Ethics</a>
-    <a href="bin.html">Bin</a>
-    <a href="links.html">Links</a>
-</nav>
 
 <body>
-    <h1 id="about-me">About Me</h1>
-    <p> Hi, you can call me orange. I speak English as my mother tongue and am learning Arabic. I love FLOSS software and am really interested in GNU/Linux. I don't currently know any programming languages (does HTML and CSS count? I don't think so.) But I am starting to learn js, after which I will get into more advanced stuff. I hope to major in compsci in university. </p>
-    <p>I love playing Minecraft; I've been playing since 2017 and don't play anything else other than occasionally Asphalt 9 and Mario Kart with my brothers. I am fairly decent at 1.8 and 1.9+ pvp both, and my building skills aren't too bad - at least in my opinion.</p>
+
+    <h1 data-value="i0rangish" id="username">i0rangish</h1>
+    <article id="about-me">
+        <script>
+            const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+
+            let interval = null;
+
+            document.querySelector("h1").onmouseover = event => {
+                let iteration = 0;
+
+                clearInterval(interval);
+
+                interval = setInterval(() => {
+                    event.target.innerText = event.target.innerText
+                        .split("")
+                        .map((letter, index) => {
+                            if (index < iteration) {
+                                return event.target.dataset.value[index];
+                            }
+
+                            return letters[Math.floor(Math.random() * 26)]
+                        })
+                        .join("");
+
+                    if (iteration >= event.target.dataset.value.length) {
+                        clearInterval(interval);
+                    }
+
+                    iteration += 1 / 3;
+                }, 30);
+            }
+        </script>
+        <p> Hi, you can call me <b id="orange">orange</b>! I speak English as my mother tongue and am learning Arabic. I love FLOSS software and am really interested in GNU/Linux. I don't currently know any programming languages (does HTML and CSS count?) But I am starting to learn js, after which I will get into more advanced stuff. I hope to major in compsci in university. </p>
+        <p>I love playing Minecraft; I've been playing since 2017 and don't play anything else other than occasionally Lego 2k Drive with my brothers. I am fairly decent at 1.8 and 1.9+ pvp both, and my building skills aren't too bad - at least in my opinion.</p>
+    </article>
+
+    <article id="ethics">
+        <h1 id="code-of-ethics"><span class="fa-solid fa-info"></span> Code Of Ethics</h1>
+        <ul>
+            <li>I <em>do not curse</em>, make use of racial or any other
+                type of <em>slurs</em>. I hope and expect that
+                other people when talking to me can also be this civil.</li>
+            <li>I do not watch, encourage, or discuss <em>NSFW</em>
+                content. (i.e. pornography, ect.) </li>
+            <li>I am a Muslim. If you do not respect me or my religion,
+                that&#39;s an ish-<em>you</em> not an ish-<em>me</em>.</li>
+            <li>I do not mind getting pinged or mentioned, but do not
+                expect an <em>instant</em> reply.</li>
+            <li>Please don&#39;t make NSFW or sexual jokes with me.</li>
+            <li>Please <em>do not</em> video call me or send me pictures of
+                yourself IRL. I don&#39;t need to see them. I do
+                voice calls sometimes though, although I&#39;m usually
+                muted in those situations.</li>
+            <li>Please do not ask me for personal information, such as my
+                real name, address, phone number, etc.</li>
+            <li>I believe we can all be friends if we are respectful to
+                each other.</li>
+            <li>If you ever feel like I am doing/saying something
+                uncomfortable, move to a private DM and tell me so please. </li>
+        </ul>
+    </article>
+    <article id="contact">
+        <h2 id="contact"><i class="fa-solid fa-link"></i> Links / Socials</h2>
+        Want to say hi? There are various ways of contacting me!
+        <ul>
+            <li> <span class="fa-brands fa-discord"></span> Discord: @<code>i0rangish</code> OR my backup account @<code>iorangish</code></li>
+            <li><span class="fa-brands fa-twitter"></span> Twitter: @<code>i0rangish</code></li>
+            <li><span class="fa-brands fa-reddit"></span> Reddit: u/<code>sahmed011</code></li>
+            <li><i class="fa-solid fa-envelope"></i> Email: <code><a href="mailto:site@i0rangish.anonaddy.me">site@i0rangish.anonaddy.me</a></code></li>
+            <li><a href="https://www.linktr.ee/i0rangish">Linktree</a>
+        </ul>
+        </ul>
+
+    </article>
+    <article id="my setup">
+        <h1 id="my-setup"><i class="fa-solid fa-computer"></i> My Setup</h1>
+        <ul>
+            <li><a href="https://www.logitech.com/en-ca/products/headsets/h390-usb-headset.981-000014.html">H390 Logitech Headset</a></li>
+            <li><a href="https://www.redragonzone.com/products/redragon-m686-vampire-elite-wireless-gaming-mouse-Logitech00-dpi-wired-wireless-gamer-mouse-with-professional-sensor">Redragon M686</a></li>
+            <li><a href="https://www.westerndigital.com/products/usb-flash-drives/sandisk-ultra-usb-3-0#SDCZ48-128G-U46">The USB I run Linux off of</a></li>
+            <li>I run NixOS 23.11 unstable & KDE Plasma as my daily driver. My dotfiles will soon be made available <a href="https://www.github.com/sahmed011/dotfiles">here.</a></li>
+    </article>
 </body>
 
 </html>
